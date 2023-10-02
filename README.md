@@ -4,7 +4,7 @@
 1. フレームワークを使ったプログラムを体験してみよう
 2. hello worldに挑戦してみよう
 
-## 開発環境について
+TP## 開発環境について
 * この演習では、Codespacesと呼ばれるサービスを使って開発を行います。
 * ブラウザ上で動作する開発環境です、インストール不要で使う事ができます。
 
@@ -55,7 +55,7 @@
 * また`index`メソッドには、`@GetMapping`とアノテーションがついていますが、これはHTTPリクエストメソッドがGETの場合は、`index`メソッドでリクエストを受け付ける事を指定しています。
 ![image](https://user-images.githubusercontent.com/32722128/151478427-9eef6834-5fbb-4d4b-a44a-a1a25fc544fb.png)
 
-* addAttributeメソッドを使用して、Thymeleaf(タイムリーフ)に対して値を渡しています、  
+* addAttributeメソッドを使用して、Thymeleaf(タイムリーフ)に対して値を渡しています、
 * addAttributeメソッドの第一引数に変数名、第二引数に渡したい値を指定しています。　　
 ![image](https://user-images.githubusercontent.com/32722128/151489468-ef4567c4-7cd7-48a0-941e-6ebc1fb04442.png)
 
@@ -63,13 +63,13 @@
 [参考資料：HTTPリクエストメソッドについて](https://wa3.i-3-i.info/word11405.html)
 
 #### Thymeleaf(タイムリーフ)について
-* ThymeleafはSpring Bootでの使用が推奨されている、テンプレートエンジンです。  
-* テンプレートエンジンとは、データとテンプレートを合体させ文字列を作る仕組みの事です。  
-* ここではデータとテンプレートを組み合わせてHTMLを生成しています。  
+* ThymeleafはSpring Bootでの使用が推奨されている、テンプレートエンジンです。
+* テンプレートエンジンとは、データとテンプレートを合体させ文字列を作る仕組みの事です。
+* ここではデータとテンプレートを組み合わせてHTMLを生成しています。
 * 生成したHTMLをブラウザに応答し、ブラウザがHTMLを解釈しWEBページの表示を行っています。
 
 #### テンプレート
-  
+
 ```
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
@@ -137,7 +137,7 @@
 </html>
 ```
 
-* Thymeleafによって、テンプレートの`<p th:text="${title}">Title</p>`の部分が、HTMLでは`<p>ここを書き換えてみよう!</p>`に書き換えられています。  
+* Thymeleafによって、テンプレートの`<p th:text="${title}">Title</p>`の部分が、HTMLでは`<p>ここを書き換えてみよう!</p>`に書き換えられています。
 * `th:text="${title}"`は「title」という変数名で指定された変数の値で、pタグ内の文字列を置き換えるという構文になります。
 * Step1Controllerのindexメソッド内で、addAttributeメソッドを使用して設定した変数の値で置き換えられています。
 
@@ -207,7 +207,7 @@
 ![image](https://user-images.githubusercontent.com/32722128/149911899-77da4cf0-cf8e-4b74-af63-1592156f4e9c.png)
 
 2. これまでに行ったファイルへの変更ないようが表示されています。
-* 変更内容に問題がないか今一度確認しましょう。 
+* 変更内容に問題がないか今一度確認しましょう。
 ![image](https://user-images.githubusercontent.com/32722128/149912420-00d3f65f-d50c-4b78-a0d6-1dfae21389f1.png)
 
 3. コミットするファイルを選択しましょう。
